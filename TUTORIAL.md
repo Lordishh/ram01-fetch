@@ -174,6 +174,20 @@ No tiene mucho sentido ahora, pero quizá a futuro me sirva.
 
 ![Context](./src/assets/img-9.png)
 
+---
+
+_Nota: en los archivos de barril sólo se pueden utilizar los componentes exportados con `named export` y no los componentes con `export default`_
+
+Componente válido:
+
+```jsx
+export const MyComponent = () => {};
+```
+
+_Esto es debido que a la hora de importar un componente con `export default` no podemos utilizar `"{}"`_
+
+---
+
 [**Subir**](#top)
 
 ---
